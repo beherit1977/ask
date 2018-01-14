@@ -11,7 +11,8 @@ gem 'jquery-rails'
 gem 'rails-i18n', '~> 4.0.0' # For 4.0.x
 
 group :production do
-  gem 'pg'
+  gem 'pg','~> 0.20'
+  gem 'rails_12factor'
 end
 
 group :development, :test do
