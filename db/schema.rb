@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160416133024) do
+ActiveRecord::Schema.define(version: 20180114074124) do
 
   create_table "questions", force: :cascade do |t|
     t.string   "text"
@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(version: 20160416133024) do
     t.string   "password_hash"
     t.string   "password_salt"
     t.string   "avatar_url"
+    t.string   "color"
   end
 
 end

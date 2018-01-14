@@ -8,6 +8,8 @@ gem 'uglifier'
 
 gem 'jquery-rails'
 
+gem 'rails-i18n', '~> 4.0.0' # For 4.0.x
+
 group :production do
   gem 'pg'
 end
