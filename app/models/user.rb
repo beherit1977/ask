@@ -21,8 +21,6 @@ class User < ActiveRecord::Base
   before_validation :username_downcase
   before_save :encrypt_password
 
-  validates :color, format: { with: /\A#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})\z/i}
-
   def username_downcase
     self.username.downcase! unless self.username.nil?
   end
